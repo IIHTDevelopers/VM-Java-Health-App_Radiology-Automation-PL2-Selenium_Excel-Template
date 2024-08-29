@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-skipped">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Ameet Khemani\Downloads\New folder (4)\Selenium updates\Radiology\PL2\VM-Java-Health-App_Radiology-Automation-PL2-Selenium-Template-main\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,  21 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="performScrollOperation">performScrollOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="takingScreenshotOfCurrentPage">takingScreenshotOfCurrentPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyAddReportFunctionalityAndSuccessMessage">verifyAddReportFunctionalityAndSuccessMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyAlertMessageOnClosingWithoutSaving">verifyAlertMessageOnClosingWithoutSaving</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyCancelationWhileCreatingListRequest">verifyCancelationWhileCreatingListRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyCreationOfListRequest">verifyCreationOfListRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyDataFromTabelByEnteringDataInSearchField">verifyDataFromTabelByEnteringDataInSearchField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyDataFromTabelByEnteringDataXRAYInSearchField">verifyDataFromTabelByEnteringDataXRAYInSearchField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyDatesAreRemeberedCorrectly">verifyDatesAreRemeberedCorrectly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyEditReportAndRequiredTextMessage">verifyEditReportAndRequiredTextMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyListRequestsComponents">verifyListRequestsComponents</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection">verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyNextButtonFunctionality">verifyNextButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyRadiologyModule">verifyRadiologyModule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyRadiologySubModules">verifyRadiologySubModules</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyRadiologyWardBillingCancellationPopup">verifyRadiologyWardBillingCancellationPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyScanDetailUpdatedSuccessPopup">verifyScanDetailUpdatedSuccessPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyScanDonePopupAndRequiredFieldMessage">verifyScanDonePopupAndRequiredFieldMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyToDataRangeBySelectOneWeekOptionFromDropdown">verifyToDataRangeBySelectOneWeekOptionFromDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyToolTipText">verifyToolTipText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.radiology_testcase" class="method navigator-link" hash-for-method="verifyUrlOfTheRadiologyModule">verifyUrlOfTheRadiologyModule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.radiology_testcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="performScrollOperation">
+                  </a> <!-- performScrollOperation -->
+                  <span class="method-name">performScrollOperation</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in
+1.  Select "All" drop down option from the "Filter" field 
+2.  Scroll all the way to the bottom of the page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="takingScreenshotOfCurrentPage">
+                  </a> <!-- takingScreenshotOfCurrentPage -->
+                  <span class="method-name">takingScreenshotOfCurrentPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Under verification > Purchase Request moduleTake the screenshot of the current page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddReportFunctionalityAndSuccessMessage">
+                  </a> <!-- verifyAddReportFunctionalityAndSuccessMessage -->
+                  <span class="method-name">verifyAddReportFunctionalityAndSuccessMessage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1.Navigate to the "Radiology" section.
+2.Go to the "List Requests" sub-section.
+3.Verify that the "Scan Done" button changes to "Add Report".
+4.Click on the "Add Report" button.
+5.Verify that the "Add report of USG Chest (X-RAY)" popup opens.
+6.Enter some text in the report field.
+7.Click the "Save" button.8.A "Report Added Successfully" success popup should appear after saving the report.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAlertMessageOnClosingWithoutSaving">
+                  </a> <!-- verifyAlertMessageOnClosingWithoutSaving -->
+                  <span class="method-name">verifyAlertMessageOnClosingWithoutSaving</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1. Navigate to the "Radiology" section.
+2. Go to the "List Requests" sub-section.
+3. Verify that the "Scan Done" button changes to "Add Report".
+4. Click on the "Add Report" button.
+5. Verify that the "Add report of USG Chest (X-RAY)" popup opens.
+6. Now close the pop up 6. Verify that an alert message "Changes will be discarded. Do you want to close anyway?" appears.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCancelationWhileCreatingListRequest">
+                  </a> <!-- verifyCancelationWhileCreatingListRequest -->
+                  <span class="method-name">verifyCancelationWhileCreatingListRequest</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in 
+1. Navigate to the Doctor module
+2. Click on "In Patient Department" SECTION
+3. Click on "Lab" button of the specific record 
+4. Click on the "----------" drop down
+5. Select the "Imaging" option  from the drop down
+6. Click on "search order item" field
+7. Select "USG Chest" option from the field 
+8. Click on the "Proceed" button
+9. Click on "sign" button which will be on "Imaging Order" page
+)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreationOfListRequest">
+                  </a> <!-- verifyCreationOfListRequest -->
+                  <span class="method-name">verifyCreationOfListRequest</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in 
+1. Naviagte to the Doctor module
+2. Click on "In Patient Department" SECTION
+3. Click on "Lab" button of the specific record 
+4. Clcik on the "----------" drop down
+5. Select the "Imaging" option  from the drop down
+6. Click on "search order item" field
+7. Select "USG Chest" option from the field 
+8. Click on the "Cancel" button
+)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDataFromTabelByEnteringDataInSearchField">
+                  </a> <!-- verifyDataFromTabelByEnteringDataInSearchField -->
+                  <span class="method-name">verifyDataFromTabelByEnteringDataInSearchField</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in and it is on list requests section
+1. Enter the keywords "USG Chest"2. Record should be present as per the entered keywords)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDataFromTabelByEnteringDataXRAYInSearchField">
+                  </a> <!-- verifyDataFromTabelByEnteringDataXRAYInSearchField -->
+                  <span class="method-name">verifyDataFromTabelByEnteringDataXRAYInSearchField</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in and it is on List requests section 
+1. Click on Filter drop down
+2. Click on "X-RAY" drop down option
+3. Click on "FROM" and select "Jan 2020"
+4. Click on "TO" and selct "march 2024"
+5. Click on "OK" button6. Record should filter out as per status )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDatesAreRemeberedCorrectly">
+                  </a> <!-- verifyDatesAreRemeberedCorrectly -->
+                  <span class="method-name">verifyDatesAreRemeberedCorrectly</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in and it is on Radiology > List Requests section
+1. Navigate to the Radiology module.
+2. Click on the "List Requests" section.
+3. Click on "FROM" and select "Jan 2020"
+4. Click on "TO" and selct "march 2024"
+5. Click on "star" tooltip
+6. Click on "OK" button
+7. Navigate back to the "List Requests" section of the Radiology module.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditReportAndRequiredTextMessage">
+                  </a> <!-- verifyEditReportAndRequiredTextMessage -->
+                  <span class="method-name">verifyEditReportAndRequiredTextMessage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1. Navigate to the "Radiology" section.
+2. Go to the "List Requests" sub-section.
+3. Click on the "Edit Report" button.
+4. Verify that the "Add report of USG Chest (X-RAY)" popup opens.
+5. Enter some text in the report field.
+6. Click the "Save" button.7. A "Report Updated Successfully" success popup should appear after saving the report with text.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyListRequestsComponents">
+                  </a> <!-- verifyListRequestsComponents -->
+                  <span class="method-name">verifyListRequestsComponents</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in and it is on radiology module
+1. Click on the radiology module drop-down arrow 
+2. Click on list request section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection">
+                  </a> <!-- verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection -->
+                  <span class="method-name">verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in and it is on radiology module
+1. Click on the list requests 
+2. Click on the edit doctors
+3. Click on Ward Billing
+4. Click on List Requests)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNextButtonFunctionality">
+                  </a> <!-- verifyNextButtonFunctionality -->
+                  <span class="method-name">verifyNextButtonFunctionality</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre-condition: user should be logged in 
+1. Navigate to the radiology module
+2. Select "July 2024" from the "From" field 
+3. Select "August 2024" from the "To" field 
+4. Scroll  all the way to the botton of the page 
+5. Clcik on "Next" button )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRadiologyModule">
+                  </a> <!-- verifyRadiologyModule -->
+                  <span class="method-name">verifyRadiologyModule</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1. Login in the healthapp application
+2. Scroll down menu till radiology
+3. Click on the radiology)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRadiologySubModules">
+                  </a> <!-- verifyRadiologySubModules -->
+                  <span class="method-name">verifyRadiologySubModules</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in 
+1. Click on the radiology Module drop-down arrow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRadiologyWardBillingCancellationPopup">
+                  </a> <!-- verifyRadiologyWardBillingCancellationPopup -->
+                  <span class="method-name">verifyRadiologyWardBillingCancellationPopup</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1. Navigate to the Radiology module
+2. Go to Ward Billing
+3. Search for Patient
+4. Click on the View Details button next to the Test Patient 3 Radiology
+5. Click on the Cancel button within the Radiology Ward Billing modal6. Clicking the "Cancel" button within the modal should trigger a popup message stating "Please Write Cancellation Remarks.")                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScanDetailUpdatedSuccessPopup">
+                  </a> <!-- verifyScanDetailUpdatedSuccessPopup -->
+                  <span class="method-name">verifyScanDetailUpdatedSuccessPopup</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1. Navigate to the "Radiology" section.
+2. Go to the "List Requests" sub-section.
+3. Click on the "Scan Done" button in the action column for the test patient.
+4. Enter "X-RAY(14*17)" in the film type field.
+5. Click the "Done" button.5. A "Scan detail Updated" success popup should appear.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScanDonePopupAndRequiredFieldMessage">
+                  </a> <!-- verifyScanDonePopupAndRequiredFieldMessage -->
+                  <span class="method-name">verifyScanDonePopupAndRequiredFieldMessage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1. Navigate to the "Radiology" section.
+2. Go to the "List Requests" sub-section.
+3. Click on the "Scan Done" button in the action column for the test patient.
+4. Verify that the "Add Scan Done Details of Test Patient 3 Radiology" popup opens.
+5. Click the "Done" button without entering any details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyToDataRangeBySelectOneWeekOptionFromDropdown">
+                  </a> <!-- verifyToDataRangeBySelectOneWeekOptionFromDropdown -->
+                  <span class="method-name">verifyToDataRangeBySelectOneWeekOptionFromDropdown</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in and it is on radiology module
+1. Click on the data range button
+2. Select"one week" option from the drop down
+3. Click on "OK" button4. Data should be present as per the selected date range using dropdown
+The 'Requested on' column date must fall within the "one week".)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyToolTipText">
+                  </a> <!-- verifyToolTipText -->
+                  <span class="method-name">verifyToolTipText</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pre condition: User should be logged in and it is on Radiology > List Request section 
+1. Hover the mouse over the star/favourite icon. 
+2. Verify that a tooltip with the text "Remember this date" appears when hovering over the star.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUrlOfTheRadiologyModule">
+                  </a> <!-- verifyUrlOfTheRadiologyModule -->
+                  <span class="method-name">verifyUrlOfTheRadiologyModule</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.Map.get(Object)&quot; because &quot;this.configData&quot; is null
+	at testcases.radiology_testcase.initBrowser(radiology_testcase.java:37)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(1. Login in the healthapp application
+2. Scroll down menu till radiology
+3. Click on the radiology and verify list request module
+)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Ameet Khemani\Downloads\New folder (4)\Selenium updates\Radiology\PL2\VM-Java-Health-App_Radiology-Automation-PL2-Selenium-Template-main\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;coreUtilities.testlisteners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;coreUtilities.testlisteners.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;dev&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.radiology_testcase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">performScrollOperation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">takingScreenshotOfCurrentPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddReportFunctionalityAndSuccessMessage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAlertMessageOnClosingWithoutSaving</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCancelationWhileCreatingListRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCreationOfListRequest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDataFromTabelByEnteringDataInSearchField</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDataFromTabelByEnteringDataXRAYInSearchField</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDatesAreRemeberedCorrectly</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyEditReportAndRequiredTextMessage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyListRequestsComponents</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNextButtonFunctionality</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRadiologyModule</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRadiologySubModules</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRadiologyWardBillingCancellationPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyScanDetailUpdatedSuccessPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyScanDonePopupAndRequiredFieldMessage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyToDataRangeBySelectOneWeekOptionFromDropdown</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyToolTipText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUrlOfTheRadiologyModule</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyScanDetailUpdatedSuccessPopup')
+data.setCell(0, 2, 'testcases.radiology_testcase')
+data.setCell(0, 3, 3);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyScanDonePopupAndRequiredFieldMessage')
+data.setCell(1, 2, 'testcases.radiology_testcase')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyRadiologyModule')
+data.setCell(2, 2, 'testcases.radiology_testcase')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyRadiologySubModules')
+data.setCell(3, 2, 'testcases.radiology_testcase')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyNavigationToAnotherSubModuleAfterOpeningTheListRequestsSection')
+data.setCell(4, 2, 'testcases.radiology_testcase')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyRadiologyWardBillingCancellationPopup')
+data.setCell(5, 2, 'testcases.radiology_testcase')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyListRequestsComponents')
+data.setCell(6, 2, 'testcases.radiology_testcase')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyDataFromTabelByEnteringDataInSearchField')
+data.setCell(7, 2, 'testcases.radiology_testcase')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAddReportFunctionalityAndSuccessMessage')
+data.setCell(8, 2, 'testcases.radiology_testcase')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUrlOfTheRadiologyModule')
+data.setCell(9, 2, 'testcases.radiology_testcase')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyCancelationWhileCreatingListRequest')
+data.setCell(10, 2, 'testcases.radiology_testcase')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyNextButtonFunctionality')
+data.setCell(11, 2, 'testcases.radiology_testcase')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'performScrollOperation')
+data.setCell(12, 2, 'testcases.radiology_testcase')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyAlertMessageOnClosingWithoutSaving')
+data.setCell(13, 2, 'testcases.radiology_testcase')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyToDataRangeBySelectOneWeekOptionFromDropdown')
+data.setCell(14, 2, 'testcases.radiology_testcase')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyCreationOfListRequest')
+data.setCell(15, 2, 'testcases.radiology_testcase')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyDatesAreRemeberedCorrectly')
+data.setCell(16, 2, 'testcases.radiology_testcase')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyToolTipText')
+data.setCell(17, 2, 'testcases.radiology_testcase')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyDataFromTabelByEnteringDataXRAYInSearchField')
+data.setCell(18, 2, 'testcases.radiology_testcase')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'takingScreenshotOfCurrentPage')
+data.setCell(19, 2, 'testcases.radiology_testcase')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyEditReportAndRequiredTextMessage')
+data.setCell(20, 2, 'testcases.radiology_testcase')
+data.setCell(20, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.radiology_testcase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">initBrowser(chrome, dev)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68678 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
