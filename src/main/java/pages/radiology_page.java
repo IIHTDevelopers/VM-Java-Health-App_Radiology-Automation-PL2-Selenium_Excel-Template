@@ -353,37 +353,5 @@ public class radiology_page extends StartupPage {
 		return false;
 		}
 
-	/**
-	 * @Test13 and @Test14 about this method verifyImageOrderCreation() Verifies the
-	 *         creation of an imaging order for a specific patient in the In Patient
-	 *         Department.
-	 *
-	 * @param radiologyExpectedData        - A map containing the expected data for
-	 *                                     radiology, including the patient name.
-	 * @param doYouWantToCancelTheNewOrder - A boolean indicating whether to cancel
-	 *                                     the new order.
-	 * @return String - Returns the actual success message if the order is created
-	 *         successfully, otherwise returns "true" or "false" based on the cancel
-	 *         action verification.
-	 * @throws Exception - If there is an issue locating or interacting with
-	 *                   elements.
-	 */
-	public String verifyImageOrderCreation(Map<String, String> radiologyExpectedData,
-			boolean doYouWantToCancelTheNewOrder) {
-		return null;
-	}
-
-	/**
-	 * @Test15 about this method takingScreenshotOfTheCurrentPage()
-	 * @param : null
-	 * @description : Taking screenshot of the current page.
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean takingScreenshotOfTheCurrentPage() throws Exception {
-		return false;
-		
-	}
-
 
 }
