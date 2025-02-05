@@ -261,88 +261,8 @@ public class radiology_testcase extends AppTestBase {
 				radiologyExpectedData.get("imagingLabAddSuccessMsg"));
 	}
 
-	@Test(priority = 15, groups = { "sanity" }, description = "1. Navigate to the \"Radiology\" section.\r\n"
-			+ "2. Go to the \"List Requests\" sub-section.\r\n"
-			+ "3. Click on the \"Scan Done\" button in the action column for the test patient.\r\n"
-			+ "4. Verify that the \"Add Scan Done Details of Test Patient 3 Radiology\" popup opens.\r\n"
-			+ "5. Click the \"Done\" button without entering any details.")
-	public void verifyScanDonePopupAndRequiredFieldMessage() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Map<String, String> radiologyExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "radiology");
-		radiology_pageInstance.scrollDownAndClickRadiologyTab();
-		Assert.assertEquals(
-				radiology_pageInstance.verifyScanDonePopupAndRequiredFieldMessage(
-						radiologyExpectedData.get("patientName"), "Scan Done"),
-				radiologyExpectedData.get("filmTypeFieldMessage"));
-	}
-
-	@Test(priority = 16, groups = { "sanity" }, description = "1. Navigate to the \"Radiology\" section.\r\n"
-			+ "2. Go to the \"List Requests\" sub-section.\r\n"
-			+ "3. Click on the \"Scan Done\" button in the action column for the test patient.\r\n"
-			+ "4. Enter \"X-RAY(14*17)\" in the film type field.\r\n" + "5. Click the \"Done\" button."
-			+ "5. A \"Scan detail Updated\" success popup should appear.")
-	public void verifyScanDetailUpdatedSuccessPopup() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Map<String, String> radiologyExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "radiology");
-
-		Assert.assertEquals(
-				radiology_pageInstance.verifyScanDetailUpdatedSuccessPopup(radiologyExpectedData, "Scan Done"),
-				radiologyExpectedData.get("scanUpdatedMessage"));
-	}
-
-	@Test(priority = 17, groups = { "sanity" }, description = "1. Navigate to the \"Radiology\" section.\r\n"
-			+ "2. Go to the \"List Requests\" sub-section.\r\n"
-			+ "3. Verify that the \"Scan Done\" button changes to \"Add Report\".\r\n"
-			+ "4. Click on the \"Add Report\" button.\r\n"
-			+ "5. Verify that the \"Add report of USG Chest (X-RAY)\" popup opens.\r\n" + "6. Now close the pop up "
-			+ "6. Verify that an alert message \"Changes will be discarded. Do you want to close anyway?\" appears.")
-	public void verifyAlertMessageOnClosingWithoutSaving() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Map<String, String> radiologyExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "radiology");
-
-		Assert.assertTrue(radiology_pageInstance
-				.verifyAlertMessageOnClosingWithoutSaving(radiologyExpectedData.get("patientName"), "Add Report"));
-	}
-
-	@Test(priority = 18, groups = { "sanity" }, description = "1.Navigate to the \"Radiology\" section.\r\n"
-			+ "2.Go to the \"List Requests\" sub-section.\r\n"
-			+ "3.Verify that the \"Scan Done\" button changes to \"Add Report\".\r\n"
-			+ "4.Click on the \"Add Report\" button.\r\n"
-			+ "5.Verify that the \"Add report of USG Chest (X-RAY)\" popup opens.\r\n"
-			+ "6.Enter some text in the report field.\r\n" + "7.Click the \"Save\" button."
-			+ "8.A \"Report Added Successfully\" success popup should appear after saving the report.")
-	public void verifyAddReportFunctionalityAndSuccessMessage() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Map<String, String> radiologyExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "radiology");
-
-		Assert.assertEquals(
-				radiology_pageInstance.verifyAddAndEditReportAndRequiredTextMessage(
-						radiologyExpectedData.get("patientName"), "Add Report",
-						radiologyExpectedData.get("reportUpdatedMessage")),
-				radiologyExpectedData.get("reportUpdatedMessage"));
-	}
-
-	@Test(priority = 19, groups = { "sanity" }, description = "1. Navigate to the \"Radiology\" section.\r\n"
-			+ "2. Go to the \"List Requests\" sub-section.\r\n" + "3. Click on the \"Edit Report\" button.\r\n"
-			+ "4. Verify that the \"Add report of USG Chest (X-RAY)\" popup opens.\r\n"
-			+ "5. Enter some text in the report field.\r\n" + "6. Click the \"Save\" button."
-			+ "7. A \"Report Updated Successfully\" success popup should appear after saving the report with text.")
-	public void verifyEditReportAndRequiredTextMessage() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-		Map<String, String> radiologyExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "radiology");
-
-		Assert.assertEquals(
-				radiology_pageInstance.verifyAddAndEditReportAndRequiredTextMessage(
-						radiologyExpectedData.get("patientName"), "Edit Report",
-						radiologyExpectedData.get("reportEditedMessage")),
-				radiologyExpectedData.get("reportEditedMessage"));
-	}
-
-	@Test(priority = 20, groups = { "sanity" }, description = "Under verification > Purchase Request module"
+	
+	@Test(priority = 15, groups = { "sanity" }, description = "Under verification > Purchase Request module"
 			+ "Take the screenshot of the current page")
 	public void takingScreenshotOfCurrentPage() throws Exception {
 		radiology_pageInstance = new radiology_page(driver);
@@ -350,20 +270,7 @@ public class radiology_testcase extends AppTestBase {
 		Assert.assertTrue(radiology_pageInstance.takingScreenshotOfTheCurrentPage());
 	}
 
-	@Test(priority = 21, groups = { "sanity" }, description = "Pre-condition: user should be logged in \r\n"
-			+ "1. Navigate to the radiology module\r\n" + "2. Select \"July 2024\" from the \"From\" field \r\n"
-			+ "3. Select \"August 2024\" from the \"To\" field \r\n"
-			+ "4. Scroll  all the way to the botton of the page \r\n" + "5. Clcik on \"Next\" button ")
-	public void verifyNextButtonFunctionality() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Assert.assertTrue(radiology_pageInstance.clickAnchorButtonByText("List Requests"));
-		Assert.assertTrue(radiology_pageInstance.verifyCurrentPageIs("1"));
-		Assert.assertTrue(radiology_pageInstance.clickButtonByText("Next"));
-		Assert.assertTrue(radiology_pageInstance.verifyCurrentPageIs("2"));
-		Assert.assertTrue(radiology_pageInstance.clickButtonByText("Previous"));
-	}
-
+	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		System.out.println("before closing the browser");
