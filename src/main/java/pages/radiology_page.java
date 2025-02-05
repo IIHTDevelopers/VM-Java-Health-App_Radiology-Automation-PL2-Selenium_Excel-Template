@@ -51,7 +51,7 @@ public class radiology_page extends StartupPage {
 	}
 
 	/**
-	 * @Test1.2 and @Test15.1 about this method scrollDownAndClickRadiologyTab()
+	 * @Test1.2 about this method scrollDownAndClickRadiologyTab()
 	 * 
 	 * @param : null
 	 * @description : verify the radiology tab, scroll to it, and click it
@@ -374,96 +374,7 @@ public class radiology_page extends StartupPage {
 	}
 
 	/**
-	 * @Test15.2 about this method verifyScanDonePopupAndRequiredFieldMessage()
-	 * 
-	 * @param patientName - The name of the patient for whom the action is to be
-	 *                    performed.
-	 * @param actionName  - The name of the action button to be clicked (e.g., "scan
-	 *                    done").
-	 * @description : This method verifies that the "Scan Done" popup opens for the
-	 *              specified patient and that the required field message appears on
-	 *              the film type field when the "Done" button is clicked without
-	 *              entering any details.
-	 * @return : String - The error message text displayed on the film type field if
-	 *         it is required.
-	 * @throws : Exception - if there is an issue locating or interacting with
-	 *           elements.
-	 * @author : YAKSHA
-	 */
-	public String verifyScanDonePopupAndRequiredFieldMessage(String patientName, String actionName) {
-		return null;
-		}
-
-	/**
-	 * @Test16 about this method verifyScanDetailUpdatedSuccessPopup()
-	 * 
-	 * @param radiologyExpectedData - A map containing expected data for the
-	 *                              radiology test case, including the patient name
-	 *                              and expected success message.
-	 * @param actionName            - The name of the action button to be clicked
-	 *                              (e.g., "scan done").
-	 * @description : This method verifies that the "Scan Done" popup opens for the
-	 *              specified patient, enters the film type details, and verifies
-	 *              that the success message appears after clicking the "Done"
-	 *              button.
-	 * @return : String - The success message text displayed after updating the scan
-	 *         details.
-	 * @throws : Exception - if there is an issue locating or interacting with
-	 *           elements.
-	 * @author : YAKSHA
-	 */
-	public String verifyScanDetailUpdatedSuccessPopup(Map<String, String> radiologyExpectedData, String actionName) {
-		return null;
-	}
-
-	/**
-	 * @Test17 about this method verifyAlertMessageOnClosingWithoutSaving()
-	 * 
-	 * @param patientName - The name of the patient for whom the action is to be
-	 *                    performed.
-	 * @param actionName  - The name of the action button to be clicked (e.g., "Add
-	 *                    Report").
-	 * @description : This method verifies that after clicking the "Add Report"
-	 *              button, the "Add report of USG Chest (X-RAY)" popup opens. When
-	 *              the popup is closed without saving, an alert message "Changes
-	 *              will be discarded. Do you want to close anyway?" appears and is
-	 *              accepted.
-	 * @return : boolean - Returns true if the alert message is successfully
-	 *         accepted, otherwise false.
-	 * @throws : Exception - if there is an issue locating or interacting with
-	 *           elements.
-	 * @author : YAKSHA
-	 */
-	public boolean verifyAlertMessageOnClosingWithoutSaving(String patientName, String actionName) throws Exception {
-		return false;
-		}
-
-	/**
-	 * @Test18 and @Test19 about this method
-	 *         verifyAddAndEditReportAndRequiredTextMessage()
-	 * 
-	 * @param patientName - The name of the patient for whom the action is to be
-	 *                    performed.
-	 * @param actionName  - The name of the action button to be clicked (e.g., "Add
-	 *                    Report").
-	 * @param popUpMeg    - The expected success message text after performing the
-	 *                    action.
-	 * @description : This method verifies that the "Add Report" popup opens for the
-	 *              specified patient, enters text into the report field, and
-	 *              verifies the success message when the "Save" button is clicked.
-	 * @return : String - The success message text displayed after clicking the
-	 *         "Save" button.
-	 * @throws : Exception - if there is an issue locating or interacting with
-	 *           elements.
-	 * @author : YAKSHA
-	 */
-	public String verifyAddAndEditReportAndRequiredTextMessage(String patientName, String actionName, String popUpMeg) {
-		return null;
-		
-	}
-
-	/**
-	 * @Test20 about this method takingScreenshotOfTheCurrentPage()
+	 * @Test15 about this method takingScreenshotOfTheCurrentPage()
 	 * @param : null
 	 * @description : Taking screenshot of the current page.
 	 * @return : Boolean
@@ -474,49 +385,5 @@ public class radiology_page extends StartupPage {
 		
 	}
 
-	/**
-	 * @Test21.1 about this method clickAnchorButtonByText()
-	 * 
-	 * @param : null
-	 * @description : Clicks Anchor button through its text
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public boolean clickAnchorButtonByText(String textOfAnchorButton) throws Exception {
-		return false;
-		}
-
-	/**
-	 * @Test21.2 @Test21.4 about this method verifyCurrentPageIs()
-	 * 
-	 * @param : String - expected current page
-	 * @description : This method verifies whether the current page matches with the
-	 *              expected current page
-	 * @return : boolean - true if the current page matches with the expected
-	 *         current page and false they don't match
-	 * @throws : Exception - if there is an issue finding the element button
-	 * @author : YAKSHA
-	 */
-	public boolean verifyCurrentPageIs(String expectedCurrentPage) throws Exception {
-		return false;
-	}
-
-	/**
-	 * @Test21.3 @Test21.5 about this method clickButtonByText()
-	 * 
-	 * @param buttonText : String - The text of the button to be clicked
-	 * @description : This method locates a button using its text and performs a
-	 *              click action on it. If the button is found and successfully
-	 *              clicked, it highlights the button first. In case of failure
-	 *              (e.g., button not found or click error), an error message is
-	 *              printed and an exception is thrown.
-	 * @return : void
-	 * @throws : Exception - if there is an issue finding the button or performing
-	 *           the click action
-	 * @author : YAKSHA
-	 */
-	public boolean clickButtonByText(String buttonText) throws Exception {
-		return false;
-	}
 
 }
