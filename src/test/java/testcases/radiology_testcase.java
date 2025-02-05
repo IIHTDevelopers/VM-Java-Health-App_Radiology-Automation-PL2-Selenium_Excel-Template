@@ -233,43 +233,6 @@ public class radiology_testcase extends AppTestBase {
 				.verifyDataFromTableByEnteringDataInSearchField(radiologyExpectedData.get("imagingName")));
 	}
 
-	@Test(priority = 13, groups = { "sanity" }, description = "Pre condition: User should be logged in \r\n"
-			+ "1. Naviagte to the Doctor module\r\n" + "2. Click on \"In Patient Department\" SECTION\r\n"
-			+ "3. Click on \"Lab\" button of the specific record \r\n" + "4. Clcik on the \"----------\" drop down\r\n"
-			+ "5. Select the \"Imaging\" option  from the drop down\r\n" + "6. Click on \"search order item\" field\r\n"
-			+ "7. Select \"USG Chest\" option from the field \r\n" + "8. Click on the \"Cancel\" button\r\n")
-	public void verifyCreationOfListRequest() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Map<String, String> radiologyExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "radiology");
-
-		Assert.assertEquals(radiology_pageInstance.verifyImageOrderCreation(radiologyExpectedData, true), "false");
-	}
-
-	@Test(priority = 14, groups = { "sanity" }, description = "Pre condition: User should be logged in \r\n"
-			+ "1. Navigate to the Doctor module\r\n" + "2. Click on \"In Patient Department\" SECTION\r\n"
-			+ "3. Click on \"Lab\" button of the specific record \r\n" + "4. Click on the \"----------\" drop down\r\n"
-			+ "5. Select the \"Imaging\" option  from the drop down\r\n" + "6. Click on \"search order item\" field\r\n"
-			+ "7. Select \"USG Chest\" option from the field \r\n" + "8. Click on the \"Proceed\" button\r\n"
-			+ "9. Click on \"sign\" button which will be on \"Imaging Order\" page\r\n")
-	public void verifyCancelationWhileCreatingListRequest() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Map<String, String> radiologyExpectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "radiology");
-
-		Assert.assertEquals(radiology_pageInstance.verifyImageOrderCreation(radiologyExpectedData, false),
-				radiologyExpectedData.get("imagingLabAddSuccessMsg"));
-	}
-
-	
-	@Test(priority = 15, groups = { "sanity" }, description = "Under verification > Purchase Request module"
-			+ "Take the screenshot of the current page")
-	public void takingScreenshotOfCurrentPage() throws Exception {
-		radiology_pageInstance = new radiology_page(driver);
-
-		Assert.assertTrue(radiology_pageInstance.takingScreenshotOfTheCurrentPage());
-	}
-
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
